@@ -1,0 +1,103 @@
+#footer-head {
+    flex-direction: column;
+    gap: 4rem;
+    background: $dark-black;
+    color: $base-white;
+    padding: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        padding: 3rem;
+
+    }
+
+    .footer-top {
+        flex-direction: column;
+
+        span {
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 42px;
+                line-height: 42px;
+            }
+        }
+
+        span:last-child {
+            text-decoration: underline;
+        }
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .footer-bottom-left {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0em;
+                color: $secondary-black;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 18px;
+                }
+            }
+
+            span:first-child {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 31px;
+                color: $base-white;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 25px;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .footer-bottom-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-right: 3rem;
+
+            @include media-breakpoint-up(lg) {
+                gap: 2rem;
+            }
+            .social-top-icons, .social-bottom-icons{
+                display: flex;
+                gap: 4rem;
+
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    text-align: left;
+                    text-decoration: none;
+                    color: #fff;
+
+                    @include media-breakpoint-up(lg) {
+                        font-size: 22px;
+                        font-weight: 400;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+    }
+}
