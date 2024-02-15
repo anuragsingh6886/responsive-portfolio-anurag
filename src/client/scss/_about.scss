@@ -1,0 +1,57 @@
+#about-section, .about-top {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .greet-text {
+        font-weight: $font-medium;
+        margin-top: 0.25rem;
+
+    }
+
+    .about-heading {
+        max-width: 250px;
+        margin-top: 1.5rem;
+    }
+
+    .description-text {
+        max-width: 350px;
+    }
+
+    .about-action-btns{
+        gap: 1rem;
+
+        .hire-me-btn {
+            width: 135px;
+            height: 50px;
+            border-radius: 30px;
+            border: none;
+            background: $dark-black;
+            color: $base-white;
+            font-weight: $font-medium;
+        }
+
+        .download-cv-btn {
+            width: 135px;
+            height: 50px;
+            border: none;
+            background: $base-white;
+            font-weight: $font-medium;
+        }
+
+        .download-cv {
+            height: 24px;
+            width: 22px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+    }
+}
