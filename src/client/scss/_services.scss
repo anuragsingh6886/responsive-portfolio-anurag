@@ -1,0 +1,104 @@
+#services{
+    flex-direction: column-reverse;
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services-left {
+        .serivce-tab {
+            display: flex;
+            gap: 2rem;
+            max-width: 90%;
+            width: 100%;
+            padding: 1.5rem 0;
+            align-items: center;
+
+            img {
+                width: 50px;
+                height: 50px;
+
+                @include media-breakpoint-up(lg) {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            .serivce-tab-detail {
+                flex-direction: column;
+
+                span:first-child {
+                    font-weight: 500;
+                }
+
+                span {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .services-right {
+        @include media-breakpoint-up(lg) {
+            max-width: 55%;
+        }
+
+        .head-text {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+
+        .main-heading-text {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 30px;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 42px;
+                line-height: 52px;
+            }
+        }
+
+        .detail-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            @include media-breakpoint-up(lg) {
+                max-width: 90%;
+            }
+        }
+
+        .special-service {
+            gap: 1rem;
+
+            @include media-breakpoint-up(lg) {
+                gap: 2rem;
+            }
+
+            .special-service-tab {
+                display: flex;
+                flex-direction: column;
+
+                span:first-child {
+                    font-size: 35px;
+                    font-weight: 500;
+                    line-height: 43px;
+                }
+
+                span:last-child {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "./components/Navbar";
 import { AboutMe } from "./components/AboutMe";
+import { Services } from "./components/Services";
 import { Portfolio } from "./components/Portfolio";
 import { Footer } from "./components/Footer";
 import './client/scss/page.scss';
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navbar email={email}></Navbar>
       <AboutMe></AboutMe>
+      <Services></Services>
       <Portfolio></Portfolio>
       <Footer email={email}></Footer>
     </>
