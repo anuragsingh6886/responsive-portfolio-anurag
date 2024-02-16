@@ -78,6 +78,7 @@
 
         .special-service {
             gap: 1rem;
+            margin-top: 3.5rem;
 
             @include media-breakpoint-up(lg) {
                 gap: 2rem;

@@ -4,7 +4,7 @@ import uilogo from "../assets/images/icons/ui-ux.svg";
 
 export function Services() {
   return (
-    <section className="container p-3 d-flex" id="services">
+    <section className="container px-3 py-4 d-flex" id="services">
       <div className="services-left">
         <div className="serivce-tab">
           <img src={uilogo} alt="" />

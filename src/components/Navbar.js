@@ -10,22 +10,22 @@ export function Navbar(props) {
       </div>
       <div className="header-right d-none d-md-flex">
         <div className="about-nav">
-          <a href="">
+          <a href="#about">
             <span>About</span>
           </a>
         </div>
         <div className="service-nav">
-          <a href="">
+          <a href="#services">
             <span>Services</span>
           </a>
         </div>
         <div className="portfolio-nav">
-          <a href="">
+          <a href="#portfolio-section">
             <span>Portfolio</span>
           </a>
         </div>
         <div className="contact-nav">
-          <a href="">
+          <a href="#footer-head">
             <span>Contact</span>
           </a>
         </div>

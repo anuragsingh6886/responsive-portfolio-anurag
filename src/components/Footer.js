@@ -15,18 +15,18 @@ export function Footer(props) {
         </div>
         <div className="footer-bottom-right">
           <div className="social-top-icons">
-            <a href="" alt="">
+           <a href="https://www.linkedin.com/in/anuragsingh6886/" alt="">
               <span>LinkedIn</span>
             </a>
-            <a href="" alt="">
+            <a href="https://twitter.com/anurags_me" alt="">
               <span>Twitter</span>
             </a>
-            <a href="" alt="">
+            <a href="https://leetcode.com/anurags-me/" alt="">
               <span>Leetcode</span>
             </a>
           </div>
           <div className="social-bottom-icons">
-            <a href="" alt="">
+            <a href="https://github.com/anuragsingh6886" alt="">
               <span>Gihutb</span>
             </a>
             <a href="" alt="">

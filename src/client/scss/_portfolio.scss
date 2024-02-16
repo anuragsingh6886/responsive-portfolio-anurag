@@ -1,4 +1,7 @@
 #portfolio-section {
+    border-top: 1px solid;
+    color: $dark-black;
+
     .portofoloio-about {
         .heading {
             font-size: 20px;
@@ -41,6 +44,7 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
+            border: 1px solid $dark-black;
         }
 
         .project-detail {
@@ -53,6 +57,10 @@
                 font-size: 18px;
                 font-weight: 500;
                 margin-left: 8px;
+            }
+
+            a {
+                color: $dark-black;
             }
 
             .project-description {

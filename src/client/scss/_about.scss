@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1rem;
 
     img {
         width: 100px;
@@ -28,6 +27,7 @@
 
     .about-action-btns{
         gap: 2rem;
+        margin-top: 1.25rem;
 
         .hire-me-btn {
             width: 135px;
@@ -45,6 +45,11 @@
             border: none;
             background: $base-white;
             font-weight: $font-medium;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            text-decoration: none;
+            color: $dark-black;
         }
 
         .download-cv {
@@ -54,4 +59,9 @@
             margin-left: 5px;
         }
     }
+}
+
+#about-section {
+    border-bottom: 1px solid;
+    color: $dark-black;
 }
