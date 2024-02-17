@@ -11,6 +11,11 @@
             gap: 0.75rem;
         }
 
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
         img {
             height: 24px;
             width: 24px;
@@ -22,6 +27,7 @@
             line-height: 22px;
             letter-spacing: 0em;
             text-align: left;
+            margin-left: 0.5rem;
         }
     }
 
@@ -34,6 +40,13 @@
             font-size: 18px;
             font-weight: $font-small;
             line-height: 22.25px;
+
+            span {
+                &:hover {
+                    text-decoration: underline;
+                    font-weight: 600;
+                }
+            }
         }
     }
 

@@ -7,7 +7,8 @@ const Product = (props) => {
 
 
   return (
-      <div className="card-data col-12 col-md-4">
+      <div className="card-data col-12 col-md-4 p-3">
+        <div className="card-wrapper">
         <img className="card-img-top" src={img} alt="" />
         <div className="project-detail m-3">
           <a href={url} alt="">
@@ -15,6 +16,7 @@ const Product = (props) => {
             <span className="project-name">{name}</span>
           </a>
           <p className="project-description">{description}</p>
+        </div>
         </div>
       </div>
   );

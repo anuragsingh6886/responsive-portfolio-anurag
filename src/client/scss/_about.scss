@@ -1,4 +1,5 @@
-#about-section, .about-top {
+#about-section,
+.about-top {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -17,15 +18,14 @@
     }
 
     .about-heading {
-        max-width: 250px;
         margin-top: 1.5rem;
     }
 
     .description-text {
-        max-width: 350px;
+        max-width: 400px;
     }
 
-    .about-action-btns{
+    .about-action-btns {
         gap: 2rem;
         margin-top: 1.25rem;
 
@@ -37,6 +37,15 @@
             background: $dark-black;
             color: $base-white;
             font-weight: $font-medium;
+
+            &:hover,
+            &:active {
+                border: 1px solid black;
+                border-radius: 30px;
+                box-shadow: 5px 5px black;
+                background: white;
+                color: black;
+            }
         }
 
         .download-cv-btn {
@@ -50,6 +59,13 @@
             display: flex;
             text-decoration: none;
             color: $dark-black;
+
+            &:hover,
+            &:active {
+                border: 1px solid black;
+                border-radius: 30px;
+                box-shadow: 5px 5px black;
+            }
         }
 
         .download-cv {

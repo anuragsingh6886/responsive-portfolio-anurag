@@ -1,4 +1,4 @@
-#services{
+#services {
     flex-direction: column-reverse;
 
     @include media-breakpoint-up(lg) {
@@ -7,6 +7,12 @@
     }
 
     .services-left {
+        margin-top: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 0;
+        }
+
         .serivce-tab {
             display: flex;
             gap: 2rem;
@@ -42,6 +48,7 @@
             }
         }
     }
+
     .services-right {
         @include media-breakpoint-up(lg) {
             max-width: 55%;
