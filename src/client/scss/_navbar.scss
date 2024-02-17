@@ -1,6 +1,13 @@
 #navbar-head {
-    justify-content: space-between;
-    align-items: center;
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: 1px 0 2.125rem rgba(0,0,0,.13);
+
+    .navbar-wrap {
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .header-left {
         justify-content: space-between;
