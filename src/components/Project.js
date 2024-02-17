@@ -1,4 +1,5 @@
 import githubLogo from "../assets/images/icons/github.svg";
+import linkLogo from '../assets/images/icons/hyperlink-icon.svg';
 import React from "react";
 
 const Product = (props) => {
@@ -13,7 +14,7 @@ const Product = (props) => {
         <div className="project-detail m-3">
           <a href={url} alt="">
             <img src={githubLogo} alt="" />
-            <span className="project-name">{name}</span>
+            <span className="project-name">{name} <img src={linkLogo} alt=""></img></span>
           </a>
           <p className="project-description">{description}</p>
         </div>
