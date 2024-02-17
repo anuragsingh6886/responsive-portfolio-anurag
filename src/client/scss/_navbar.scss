@@ -1,7 +1,7 @@
 #navbar-head {
     position: sticky;
     top: 0;
-    background: white;
+    background: $base-white;
     box-shadow: 1px 0 2.125rem rgba(0,0,0,.13);
 
     .navbar-wrap {
@@ -20,7 +20,7 @@
 
         a {
             text-decoration: none;
-            color: black;
+            color: $dark-black;
         }
 
         img {
@@ -49,9 +49,10 @@
             line-height: 22.25px;
 
             span {
-                &:hover {
+                &:hover,
+                &:active {
                     text-decoration: underline;
-                    font-weight: 600;
+                    font-weight: $font-large;
                 }
             }
         }
@@ -60,5 +61,13 @@
     .header-right-mobile>img {
         height: 24px;
         width: 24px;
+    }
+
+    .modal-custom-style.modal-dialog {
+        width: 90%;
+        background-color: #fff;
+        height: 100vh;
+        overflow-y: auto;
+        margin: 0;
     }
 }

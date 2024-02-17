@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
+import Modal from "react-bootstrap/Modal";
 import emailLogo from "../assets/images/icons/email.svg";
 import hamburgerMenueMobile from "../assets/images/icons/hamburger-menu.svg";
+
 export function Navbar(props) {
   const Mailto = ({ email, subject = "", body = "", children }) => {
     let params = subject || body ? "?" : "";
@@ -9,6 +12,11 @@ export function Navbar(props) {
 
     return <a href={`mailto:${email}${params}`}>{children}</a>;
   };
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <section className="d-flex py-3" id="navbar-head">
@@ -25,7 +33,7 @@ export function Navbar(props) {
         </div>
         <div className="header-right d-none d-md-flex">
           <div className="about-nav">
-            <a href="#about">
+            <a href="#about-section">
               <span>About</span>
             </a>
           </div>
@@ -46,9 +54,18 @@ export function Navbar(props) {
           </div>
         </div>
         <div className="header-right-mobile d-md-none">
-          <img src={hamburgerMenueMobile} alt="" />
+          <span onClick={handleShow}>
+            <img src={hamburgerMenueMobile} alt="" />
+          </span>
         </div>
       </div>
+
+      <Modal show={show} onHide={handleClose} className="modal-custom-style">
+        <Modal.Header closeButton >
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+      </Modal>
     </section>
   );
 }

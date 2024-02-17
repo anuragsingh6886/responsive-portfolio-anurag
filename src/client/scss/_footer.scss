@@ -15,7 +15,7 @@
 
         span {
             font-size: 30px;
-            font-weight: 400;
+            font-weight: $font-small;
             line-height: 30px;
             letter-spacing: 0em;
             text-align: left;
@@ -47,7 +47,7 @@
 
             span {
                 font-size: 14px;
-                font-weight: 400;
+                font-weight: $font-small;
                 line-height: 22px;
                 letter-spacing: 0em;
                 color: $secondary-black;
@@ -59,7 +59,7 @@
 
             span:first-child {
                 font-size: 18px;
-                font-weight: 400;
+                font-weight: $font-small;
                 line-height: 31px;
                 color: $base-white;
 
@@ -85,7 +85,7 @@
 
                 a {
                     font-size: 16px;
-                    font-weight: 500;
+                    font-weight: $font-medium;
                     line-height: 20px;
                     text-align: left;
                     text-decoration: none;
@@ -93,7 +93,7 @@
 
                     @include media-breakpoint-up(lg) {
                         font-size: 22px;
-                        font-weight: 400;
+                        font-weight: $font-small;
                         line-height: 27px;
                     }
                 }

@@ -5,7 +5,7 @@
     .portofoloio-about {
         .heading {
             font-size: 20px;
-            font-weight: 400;
+            font-weight: $font-small;
             line-height: 25px;
         }
 
@@ -16,7 +16,7 @@
 
             span {
                 font-size: 28px;
-                font-weight: 400;
+                font-weight: $font-small;
                 line-height: 30px;
                 max-width: 250px;
 
@@ -42,7 +42,7 @@
     .card-data {
 
         .card-wrapper {
-            border: 1px solid black;
+            border: 1px solid $dark-black;
             border-radius: 10px;
         }
 
@@ -63,7 +63,7 @@
 
             .project-name {
                 font-size: 18px;
-                font-weight: 500;
+                font-weight: $font-medium;
                 margin-left: 8px;
 
                 img {
@@ -80,7 +80,7 @@
             }
 
             .project-description {
-                font-weight: 400;
+                font-weight: $font-small;
                 font-size: 16px;
             }
         }

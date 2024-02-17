@@ -35,12 +35,12 @@
                 flex-direction: column;
 
                 span:first-child {
-                    font-weight: 500;
+                    font-weight: $font-medium;
                 }
 
                 span {
                     font-size: 18px;
-                    font-weight: 400;
+                    font-weight: $font-small;
                     line-height: 22px;
                     letter-spacing: 0em;
                     text-align: left;
@@ -56,13 +56,13 @@
 
         .head-text {
             font-size: 20px;
-            font-weight: 400;
+            font-weight: $font-small;
             line-height: 25px;
         }
 
         .main-heading-text {
             font-size: 28px;
-            font-weight: 400;
+            font-weight: $font-small;
             line-height: 30px;
 
             @include media-breakpoint-up(lg) {
@@ -73,7 +73,7 @@
 
         .detail-text {
             font-size: 18px;
-            font-weight: 400;
+            font-weight: $font-small;
             line-height: 22px;
             letter-spacing: 0em;
             text-align: left;
@@ -97,13 +97,13 @@
 
                 span:first-child {
                     font-size: 35px;
-                    font-weight: 500;
+                    font-weight: $font-medium;
                     line-height: 43px;
                 }
 
                 span:last-child {
                     font-size: 18px;
-                    font-weight: 400;
+                    font-weight: $font-small;
                     line-height: 22px;
                 }
             }
