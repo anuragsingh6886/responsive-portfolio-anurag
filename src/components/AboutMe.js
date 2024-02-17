@@ -15,7 +15,7 @@ export function AboutMe() {
         <img src={profileImg} alt=""></img>
         <span className="greet-text">Hi, I’m Anurag Singh.✌🏻</span>
         <h4 className="about-heading">I build things for the Web.</h4>
-        <span className="description-text">I'm a software engineer specializing in building exceptional digital experiences. Currently, I'm focused on building accessible, e-commerce, usre-centered websites/products at Cloud Odyssey.</span>
+        <span className="description-text">I'm a software engineer specializing in building exceptional digital experiences. Currently, I'm focused on building accessible, e-commerce, usre-centered websites/products at <span style={{background:"skyblue"}}>Cloud Odyssey.</span></span>
       </div>
       <div className="about-action-btns d-flex">
         <button className="hire-me-btn" onClick={raiseInvoiceClicked}>Hire Me</button>
