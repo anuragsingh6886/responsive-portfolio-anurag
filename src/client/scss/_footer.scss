@@ -82,8 +82,8 @@
             margin: 0.5rem 0;
 
             .country-flag {
-                width: 35px;
-                height: 35px;
+                width: 25px;
+                height: 25px;
                 border-radius: 50%;
             }
 
@@ -108,7 +108,11 @@
             .social-top-icons,
             .social-bottom-icons {
                 display: flex;
-                gap: 4rem;
+                gap: 1rem;
+
+                @include media-breakpoint-up(lg) {
+                    gap: 2rem;
+                }
 
                 a {
                     font-size: 16px;

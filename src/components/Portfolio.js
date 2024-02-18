@@ -6,7 +6,7 @@ export function Portfolio() {
   return (
     <section className="container px-3 py-4" id="portfolio-section">
       <div className="portofoloio-about">
-        <p className="heading">Portfolio</p>
+        <p className="heading">Portfolio:</p>
         <div className="description-head">
           <span>Let's have a look at my portfolio</span>
           <a href="https://github.com/anuragsingh6886" alt="">

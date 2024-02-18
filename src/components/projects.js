@@ -1,39 +1,44 @@
 const projects = [
-    {
-      name: 'Taneira Site',
-      description: '- Html, CSS, Sass/scss, bootstrap, Javascript, JQuery, Ajax, Node.js, Github & Web Services.',
-      img: require('../assets/images/project/taneira-img.jpg'),
-      url: 'https://www.taneira.com/'
-    },
-    {
-      name: 'Titan Watches Site',
-      description: '- Html, CSS, Sass/scss, bootstrap, Javascript, JQuery, Ajax, Node.js, Github & Web Services.',
-      img: require('../assets/images/project/titan-img.png'),
-      url: 'https://www.titan.co.in/'
-    },
-    {
-      name: 'Sonata Watches Site',
-      description: '- Html, CSS, Sass/scss, bootstrap, Javascript, JQuery, Ajax, Node.js, Github & Web Services.',
-      img: require('../assets/images/project/sonata-img.png'),
-      url: 'https://www.sonatawatches.in/'
-    },{
-      name: 'Demo Project One',
-      description: 'Dummy project descripon in small',
-      img: require('../assets/images/project/taneira-img.jpg'),
-      url: 'https://github.com/anuragsingh6886/quiz-app'
-    },
-    {
-      name: 'Demo Project Two',
-      description: 'Dummy project descripon in small',
-      img: require('../assets/images/project/taneira-img.jpg'),
-      url: 'https://github.com/anuragsingh6886/quiz-app'
-    },
-    {
-      name: 'Demo Project Three',
-      description: 'Dummy project descripon in small',
-      img: require('../assets/images/project/taneira-img.jpg'),
-      url: 'https://github.com/anuragsingh6886/quiz-app'
-    }
-  ];
+  {
+    name: "Titan Watches Site",
+    description:
+      "Html, Sass/scss, bootstrap, Javascript, JQuery, Node.js, Github & Web Services.",
+    img: require("../assets/images/project/titan-img.png"),
+    url: "https://www.titan.co.in/",
+  },
+  {
+    name: "Sonata Watches Site",
+    description:
+      "Html, Sass/scss, bootstrap, Javascript, JQuery, Node.js, Github.",
+    img: require("../assets/images/project/sonata-img.png"),
+    url: "https://www.sonatawatches.in/",
+  },
+  {
+    name: "Taneira Site",
+    description:
+      "Html, Sass/scss, bootstrap, Javascript, JQuery, Ajax, Node.js, Github & Web Services.",
+    img: require("../assets/images/project/taneira-img.jpg"),
+    url: "https://www.taneira.com/",
+  },
+  {
+    name: "Portfolio Website - React.JS",
+    description:
+      "JSX, CSS, Bootstrap, Sass/scss, Responsive UI, Javascript, React.js, Vercel & Github.",
+    img: require("../assets/images/project/portfolio-site.png"),
+    url: "https://portfolio-anurag-xi.vercel.app/",
+  },
+  {
+    name: "Music Player - WebApp",
+    description: "HTML, CSS, Bootstrap, Javascript, JQuery & Github",
+    img: require("../assets/images/project/music_app.jpg"),
+    url: "https://anuragsingh6886.github.io/music-app/",
+  },
+  {
+    name: "Quiz App",
+    description: "HTML, CSS, Bootstrap, Javascript, JQuery & Github",
+    img: require("../assets/images/project/quiz-app.jpg"),
+    url: "https://anuragsingh6886.github.io/quiz-app/",
+  },
+];
 
 export default projects;

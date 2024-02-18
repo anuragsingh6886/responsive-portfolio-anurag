@@ -70,19 +70,28 @@
             .project-name {
                 font-size: 18px;
                 font-weight: $font-medium;
-                margin-left: 8px;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                @include media-breakpoint-up(lg) {
+                    gap: 0.75rem;
+                }
 
                 img {
-                    width: 12PX;
-                    height: 12PX;
-                    margin-bottom: 12px;
-                    margin-left: 8px;
-
+                    width: 18px;
+                    height: 18px;
                 }
             }
 
             a {
                 color: $dark-black;
+                text-decoration: none;
+
+                &:hover,
+                &:active {
+                    text-decoration: underline;
+                }
             }
 
             .project-description {

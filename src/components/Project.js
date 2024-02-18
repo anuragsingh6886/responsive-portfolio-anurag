@@ -1,20 +1,17 @@
-import githubLogo from "../assets/images/icons/github.svg";
-import linkLogo from '../assets/images/icons/hyperlink-icon.svg';
+import linkLogo from '../assets/images/icons/link_3_line.svg';
 import React from "react";
 
 const Product = (props) => {
   // project data
   const { name, description, img, url } = props;
 
-
   return (
       <div className="card-data col-12 col-md-4 p-3">
         <div className="card-wrapper">
-        <img className="card-img-top" src={img} alt="" />
+        <img className="card-img-top" src={img} alt="project-img" />
         <div className="project-detail m-3">
-          <a href={url} alt="">
-            <img src={githubLogo} alt="" />
-            <span className="project-name">{name} <img src={linkLogo} alt=""></img></span>
+          <a href={url} alt="project-url">
+            <span className="project-name">{name} <img src={linkLogo} alt="link-logo"></img></span>
           </a>
           <p className="project-description">{description}</p>
         </div>

@@ -29,7 +29,7 @@ export function Services() {
         </div>
       </div>
       <div className="services-right">
-        <p className="head-text">Services</p>
+        <p className="head-text">Services:</p>
         <h3 className="main-heading-text">My Awesome Service</h3>
         <p className="detail-text">
           As a dedicated UI designer and web developer, I offer a range of

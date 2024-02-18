@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     background: $base-white;
-    box-shadow: 1px 0 2.125rem rgba(0,0,0,.13);
+    box-shadow: 1px 0 2.125rem rgba(0, 0, 0, .13);
 
     .navbar-wrap {
         justify-content: space-between;
@@ -49,6 +49,7 @@
             line-height: 22.25px;
 
             span {
+
                 &:hover,
                 &:active {
                     text-decoration: underline;
@@ -69,5 +70,46 @@
         height: 100vh;
         overflow-y: auto;
         margin: 0;
+    }
+}
+
+.modal-dialog {
+    margin: 0 !important;
+    width: 80% !important;
+    height: 100% !important;
+
+    .modal-content {
+        height: 100%;
+        border: none;
+        border-radius: 0;
+    }
+
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        a {
+            color: $dark-black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: $font-large;
+            line-height: 22.25px;
+        }
+
+        .download-cv-btn {
+            color: white;
+            background: black;
+            border-radius: 20px;
+            font-size: 18px;
+            line-height: 22.25px;
+            padding: 0.35rem;
+            font-weight: 500;
+            width: 100%;
+        }
+
+        .download-cv {
+            margin-left: 0.25rem;
+        }
     }
 }

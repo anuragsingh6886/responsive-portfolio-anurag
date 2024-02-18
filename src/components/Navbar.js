@@ -3,6 +3,7 @@ import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import emailLogo from "../assets/images/icons/email.svg";
 import hamburgerMenueMobile from "../assets/images/icons/hamburger-menu.svg";
+import download from '../assets/images/icons/downloads-white.svg';
 
 export function Navbar(props) {
   const Mailto = ({ email, subject = "", body = "", children }) => {
@@ -66,10 +67,42 @@ export function Navbar(props) {
       </div>
 
       <Modal show={show} onHide={handleClose} className="modal-custom-style">
-        <Modal.Header closeButton >
-          <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Header closeButton>
+          <Modal.Title>Anurag Singh</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+          <div className="about-nav">
+            <a href="#about-section" onClick={handleClose}>
+              <span>About</span>
+            </a>
+          </div>
+          <div className="service-nav">
+            <a href="#skills" onClick={handleClose}>
+              <span>Skills</span>
+            </a>
+          </div>
+          <div className="portfolio-nav">
+            <a href="#portfolio-section" onClick={handleClose}>
+              <span>Portfolio</span>
+            </a>
+          </div>
+          <div className="service-nav">
+            <a href="#services" onClick={handleClose}>
+              <span>Services</span>
+            </a>
+          </div>
+          <div className="contact-nav">
+            <a href="#footer-head" onClick={handleClose}>
+              <span>Contact</span>
+            </a>
+          </div>
+          <hr />
+          <a href={require("../assets/files/anurag-profile.pdf")} download="resume-anurag" className="download-cv-btn-a">
+            <button className="download-cv-btn">
+              Download CV <img className="download-cv" src={download} alt="" />
+            </button>
+          </a>
+        </Modal.Body>
       </Modal>
     </section>
   );
