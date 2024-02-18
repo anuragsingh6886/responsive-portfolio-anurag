@@ -40,7 +40,7 @@ export function Services() {
         </p>
         <div className="special-service d-flex">
           <div className="special-service-tab">
-            <span>5+</span>
+            <span>10+</span>
             <span>Project completed</span>
           </div>
           <div className="special-service-tab">
