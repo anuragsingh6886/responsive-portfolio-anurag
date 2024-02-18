@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "./components/Navbar";
 import { AboutMe } from "./components/AboutMe";
+import { Skill } from "./components/Skills";
 import { Services } from "./components/Services";
 import { Portfolio } from "./components/Portfolio";
 import { Footer } from "./components/Footer";
@@ -13,8 +14,9 @@ function App() {
     <>
       <Navbar email={email}></Navbar>
       <AboutMe></AboutMe>
-      <Services></Services>
+      <Skill></Skill>
       <Portfolio></Portfolio>
+      <Services></Services>
       <Footer email={email}></Footer>
     </>
   );

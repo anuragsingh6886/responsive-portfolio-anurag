@@ -1,19 +1,19 @@
 const projects = [
     {
       name: 'Taneira Site',
-      description: 'Buy Women Saree Online with Taneira. Shop from the wide range of Saris from Taneira',
+      description: '- Html, CSS, Sass/scss, bootstrap, Javascript, JQuery, Ajax, Node.js, Github & Web Services.',
       img: require('../assets/images/project/taneira-img.jpg'),
       url: 'https://www.taneira.com/'
     },
     {
       name: 'Titan Watches Site',
-      description: 'We have the latest styles & trends of watches, smart watches, clocks and other accessories.',
+      description: '- Html, CSS, Sass/scss, bootstrap, Javascript, JQuery, Ajax, Node.js, Github & Web Services.',
       img: require('../assets/images/project/titan-img.png'),
       url: 'https://www.titan.co.in/'
     },
     {
       name: 'Sonata Watches Site',
-      description: 'Buy Sonata Watches for Men from the Official Website.',
+      description: '- Html, CSS, Sass/scss, bootstrap, Javascript, JQuery, Ajax, Node.js, Github & Web Services.',
       img: require('../assets/images/project/sonata-img.png'),
       url: 'https://www.sonatawatches.in/'
     },{

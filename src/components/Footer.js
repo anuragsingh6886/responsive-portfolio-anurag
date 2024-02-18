@@ -1,4 +1,8 @@
 import React from "react";
+// import copyLogo from "../assets/images/icons/copy-link-icon.svg";
+import copyLogo from "../assets/images/icons/icons8-copy.png";
+import countryLogo from "../assets/images/icons/in.svg";
+
 
 export function Footer(props) {
   return (
@@ -9,13 +13,25 @@ export function Footer(props) {
       </div>
       <div className="footer-bottom d-flex">
         <div className="footer-bottom-left">
-          <span className="email-address">{props.email}</span>
+          <span className="email-address">
+            {props.email}
+            <button className="copy-btn" onClick={() => navigator.clipboard.writeText(props.email)}>
+              <img src={copyLogo} alt="" />
+            </button>
+          </span>
+          <span className="mobile-number">
+            <img className="country-flag" src={countryLogo} alt=""></img>
+            <span>+91 9696151328</span>
+            <button className="copy-btn" onClick={() => navigator.clipboard.writeText("9696151328")}>
+              <img src={copyLogo} alt="" />
+            </button>
+          </span>
           <span className="address-line-1">Whitefield, Bangalore</span>
           <span className="address-line-2">Karnataka, India, 560048</span>
         </div>
         <div className="footer-bottom-right">
           <div className="social-top-icons">
-           <a href="https://www.linkedin.com/in/anuragsingh6886/" alt="">
+            <a href="https://www.linkedin.com/in/anuragsingh6886/" alt="">
               <span>LinkedIn</span>
             </a>
             <a href="https://twitter.com/anurags_me" alt="">

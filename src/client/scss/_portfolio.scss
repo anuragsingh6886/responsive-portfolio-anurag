@@ -35,6 +35,12 @@
                 line-height: 22.25px;
                 display: flex;
                 align-items: end;
+
+                &:hover,
+                &:active {
+                    text-decoration: none;
+                    font-weight: $font-large;
+                }
             }
         }
     }
@@ -57,8 +63,8 @@
 
         .project-detail {
             img {
-                width: 22px;
-                height: 20px;
+                width: 15px;
+                height: 15px;
             }
 
             .project-name {

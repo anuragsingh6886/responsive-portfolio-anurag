@@ -3,7 +3,6 @@ import projectData from "./projects";
 import Project from "./Project";
 
 export function Portfolio() {
-
   return (
     <section className="container px-3 py-4" id="portfolio-section">
       <div className="portofoloio-about">
@@ -18,15 +17,15 @@ export function Portfolio() {
       {/* Loop all avilable Project and show it in card */}
 
       <div className="portfolio-cards row">
-          {projectData.map((prod) => (
-            <Project
-              key={prod.name}
-              name={prod.name}
-              description={prod.description}
-              img={prod.img}
-              url={prod.url}
-            />
-          ))}
+        {projectData.map((prod) => (
+          <Project
+            key={prod.name}
+            name={prod.name}
+            description={prod.description}
+            img={prod.img}
+            url={prod.url}
+          />
+        ))}
       </div>
     </section>
   );

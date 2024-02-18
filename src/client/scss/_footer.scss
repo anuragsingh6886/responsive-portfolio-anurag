@@ -65,8 +65,33 @@
 
                 @include media-breakpoint-up(lg) {
                     font-size: 25px;
-                    margin-bottom: 1rem;
+                    margin-bottom: 0.5rem;
                 }
+            }
+        }
+
+        .copy-btn {
+            background: none;
+            outline: none;
+            border: none;
+        }
+
+        .mobile-number {
+            display: flex;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+
+            .country-flag {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+            }
+
+            span {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 31px;
+                color: #FFF;
             }
         }
 
@@ -79,7 +104,9 @@
             @include media-breakpoint-up(lg) {
                 gap: 2rem;
             }
-            .social-top-icons, .social-bottom-icons{
+
+            .social-top-icons,
+            .social-bottom-icons {
                 display: flex;
                 gap: 4rem;
 
