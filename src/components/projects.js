@@ -28,17 +28,17 @@ const projects = [
     url: "https://portfolio-anurag-xi.vercel.app/",
   },
   {
+    name: "Weather WebApp React ",
+    description: "JSX, CSS, Bootstrap, Sass/scss, Responsive UI, Javascript, React.js, Vercel & Github.",
+    img: require("../assets/images/project/quiz-app.jpg"),
+    url: "https://weather-web-app-react-rouge.vercel.app/",
+  },
+  {
     name: "Music Player - WebApp",
     description: "HTML, CSS, Bootstrap, Javascript, JQuery & Github",
     img: require("../assets/images/project/music_app.jpg"),
     url: "https://anuragsingh6886.github.io/music-app/",
-  },
-  {
-    name: "Quiz App",
-    description: "HTML, CSS, Bootstrap, Javascript, JQuery & Github",
-    img: require("../assets/images/project/quiz-app.jpg"),
-    url: "https://anuragsingh6886.github.io/quiz-app/",
-  },
+  }
 ];
 
 export default projects;
