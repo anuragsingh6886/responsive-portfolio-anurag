@@ -20,14 +20,14 @@ export function Footer(props) {
         <div className="footer-bottom-left">
           <span className="email-address">
             {props.email}
-            <button className="copy-btn" onClick={() => navigator.clipboard.writeText(props.email)}>
+            <button className="copy-btn" aria-label="copy button" onClick={() => navigator.clipboard.writeText(props.email)}>
               <img src={copyLogo} alt="" />
             </button>
           </span>
           <span className="mobile-number">
             <img className="country-flag" src={countryLogo} alt=""></img>
             <span>+91 9696151328</span>
-            <button className="copy-btn" onClick={() => navigator.clipboard.writeText("9696151328")}>
+            <button className="copy-btn" aria-label="copy button" onClick={() => navigator.clipboard.writeText("9696151328")}>
               <img src={copyLogo} alt="" />
             </button>
           </span>
