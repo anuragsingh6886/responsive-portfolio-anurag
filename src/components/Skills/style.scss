@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+
+#skills {
+  .description {
+    font-size: 1.2rem;
+    font-weight: $font-medium;
+    margin-bottom: 1rem;
+  }
+
+  .card-map {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+  }
+
+  .card-data {
+    background: $base-white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s;
+    width: 120px;
+    text-align: center;
+    padding: 1rem;
+    &:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .card-img-top {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 0.5rem;
+    }
+    .project-name {
+      font-size: 1rem;
+      font-weight: $font-medium;
+    }
+  }
+}

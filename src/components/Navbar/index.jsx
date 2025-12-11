@@ -1,19 +1,16 @@
-import React from "react";
-import { useState } from "react";
-import Modal from "react-bootstrap/Modal";
-import emailLogo from "../assets/images/icons/email.svg";
-import hamburgerMenueMobile from "../assets/images/icons/hamburger-menu.svg";
-import download from '../assets/images/icons/downloads-white.svg';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import Modal from 'react-bootstrap/Modal';
+import { Mailto } from '../common/Mailto';
+import emailLogo from '../../assets/images/icons/email.svg';
+import hamburgerMenueMobile from '../../assets/images/icons/hamburger-menu.svg';
+import downloadIcon from '../../assets/images/icons/downloads-white.svg';
+import './style.scss';
 
-export function Navbar(props) {
-  const Mailto = ({ email, subject = "", body = "", children }) => {
-    let params = subject || body ? "?" : "";
-    if (subject) params += `subject=${encodeURIComponent(subject)}`;
-    if (body) params += `${subject ? "&" : ""}body=${encodeURIComponent(body)}`;
+// Ideally, this should be imported from a constants file or assets map
+const resumePath = require('../../assets/files/anurag-profile.pdf');
 
-    return <a href={`mailto:${email}${params}`}>{children}</a>;
-  };
-
+export const Navbar = ({ email }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -23,13 +20,9 @@ export function Navbar(props) {
     <section className="d-flex py-3" id="navbar-head">
       <div className="container d-flex navbar-wrap">
         <div className="header-left d-flex">
-          <Mailto
-            email={props.email}
-            subject="Subject Here"
-            body="Hi, Anurag..."
-          >
-            <img src={emailLogo} alt="" />
-            <span>{props.email}</span>
+          <Mailto email={email} subject="Subject Here" body="Hi, Anurag...">
+            <img src={emailLogo} alt="Email" />
+            <span>{email}</span>
           </Mailto>
         </div>
         <div className="header-right d-none d-md-flex">
@@ -60,8 +53,13 @@ export function Navbar(props) {
           </div>
         </div>
         <div className="header-right-mobile d-md-none">
-          <span onClick={handleShow}>
-            <img src={hamburgerMenueMobile} alt="" />
+          <span
+            onClick={handleShow}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 'Enter' && handleShow()}
+          >
+            <img src={hamburgerMenueMobile} alt="Menu" />
           </span>
         </div>
       </div>
@@ -97,13 +95,18 @@ export function Navbar(props) {
             </a>
           </div>
           <hr />
-          <a href={require("../assets/files/anurag-profile.pdf")} download="resume-anurag" className="download-cv-btn-a">
+          <a href={resumePath} download="resume-anurag" className="download-cv-btn-a">
             <button className="download-cv-btn">
-              Download CV <img className="download-cv" src={download} alt="" />
+              <img src={downloadIcon} alt="Download" />
+              Download CV
             </button>
           </a>
         </Modal.Body>
       </Modal>
     </section>
   );
-}
+};
+
+Navbar.propTypes = {
+  email: PropTypes.string.isRequired,
+};
